@@ -12,17 +12,37 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- add google verification -->
+
+    <meta name="description" content="Web developer portfolio website. Full stack-developer specialized in TypeScript, React and Node JS. Check about my projects, my skills and more.">
+    <meta name="author" content="Filippo Mazzalai">
+
+    <!-- adjust canonical for the different pages -->
+    <link rel="canonical" href="https://www.filippomazzalai.me" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content={Astro.generator} />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- og graph metadata -->
+    <meta property="og:title" content="Filippo Mazzalai: Full-Stack Website Developer" />
+    <meta property="og:url" content="https://www.filippomazzalai.me"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Web developer portfolio website. Full stack-developer specialized in Typescript, React and Node JS." />
+
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
 
     <title>{title}</title>
   </head>
   <body class="h-full">
+    <header>
+
+    </header>
     <main>
       <slot />
     </main>
+    <footer>
+
+    </footer>
   </body>
 </html>
