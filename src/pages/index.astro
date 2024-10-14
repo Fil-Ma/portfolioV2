@@ -1,7 +1,15 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
+import construction from "@assets/png/construction.png";
+import { Image } from "astro:assets";
+import HiddenWrapper from "@components/HiddenWrapper";
+import { under_construction } from "@constants/index";
 ---
 
 <MainLayout title="Filippo Mazzalai: Full-Stack Website Developer">
-  <h1>Hello</h1>
+  <HiddenWrapper hidden={!under_construction}>
+    <div class="h-[500px] w-full">
+      <Image class="mx-auto" src={construction} alt="construction" />
+    </div>
+  </HiddenWrapper>
 </MainLayout>

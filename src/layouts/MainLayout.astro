@@ -1,5 +1,7 @@
 ---
-import Header from '@components/Header/Header';
+import Header from "@components/Header/Header";
+import HiddenWrapper from "@components/HiddenWrapper";
+import { under_construction } from "@constants/index";
 
 type Props = {
   title: string;
@@ -44,7 +46,9 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="h-full">
-    <Header />
+    <HiddenWrapper hidden={under_construction}>
+      <Header />
+    </HiddenWrapper>
     <main>
       <slot />
     </main>

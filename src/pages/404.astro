@@ -1,3 +1,9 @@
 ---
+import not_found from "@assets/png/not_found.png";
+import { Image } from "astro:assets";
 ---
-<h1>Page not found</h1>
+
+<div class="h-[500px] w-full">
+  <Image class="mx-auto" src={not_found} alt="construction" />
+</div>
+<h1 class="text-center">Page not found</h1>
