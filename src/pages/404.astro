@@ -1,9 +1,38 @@
 ---
 import not_found from "@assets/png/not_found.png";
 import { Image } from "astro:assets";
+import Button from "@theme/Button";
 ---
 
-<div class="h-[500px] w-full">
-  <Image class="mx-auto" src={not_found} alt="construction" />
-</div>
-<h1 class="text-center">Page not found</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- add google verification -->
+
+    <meta
+      name="description"
+      content="Web developer portfolio website. Full stack-developer specialized in TypeScript, React and Node JS. Check about my projects, my skills and more."
+    />
+    <meta name="author" content="Filippo Mazzalai" />
+
+    <!-- adjust canonical for the different pages -->
+    <link rel="canonical" href="https://www.filippomazzalai.me" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <title>Page not found</title>
+  </head>
+  <body class="h-full">
+    <main>
+      <div class="h-[500px] w-full">
+        <Image class="mx-auto" src={not_found} alt="construction" />
+      </div>
+      <Button as="a" href="/" className="mx-auto">Return to Homepage</Button>
+    </main>
+  </body>
+</html>

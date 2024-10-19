@@ -8,7 +8,8 @@
       "@constants/*": ["src/constants/*"],
       "@layouts/*": ["src/layouts/*"],
       "@styles/*": ["src/styles/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@theme/*": ["src/theme/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
