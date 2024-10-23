@@ -1,0 +1,33 @@
+---
+import type { TTab } from "./Tab";
+import Tabs from "./Tabs";
+import IconButton from "@theme/IconButton";
+import TranslationsIcon from "@assets/icons/TranslationsIcon";
+import ThemeIcon from "@assets/icons/ThemeIcon";
+import MobileNav from "./MobileMenu";
+
+const tabs: TTab[] = [
+  { path: "/", name: "home" },
+  { path: "/about", name: "about" },
+  { path: "/projects", name: "projects" },
+  { path: "/blog", name: "blog" },
+];
+---
+
+<header class="flex flex-row items-center justify-between">
+  <Tabs tabs={tabs} />
+  <MobileNav tabs={tabs} />
+
+  <div class="flex flex-row items-center gap-4 pr-4">
+    <IconButton>
+      <TranslationsIcon />
+    </IconButton>
+    <IconButton id="themeToggle">
+       <ThemeIcon />
+    </IconButton>
+  </div>
+</header>
+
+<script>
+  import "@scripts/darkTheme.ts";
+</script>

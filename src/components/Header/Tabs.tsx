@@ -3,7 +3,7 @@ import Tab from "./Tab";
 
 const Tabs = ({ tabs }: { tabs: TTab[] }) => {
   return (
-    <nav class="flex list-none flex-row items-center justify-start">
+    <nav class="hidden list-none flex-row items-center justify-start sm:flex">
       {tabs.map((t) => (
         <Tab {...t} />
       ))}

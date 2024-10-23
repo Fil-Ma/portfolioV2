@@ -15,10 +15,3 @@ const Tab = ({ path, name }: TTab) => {
 };
 
 export default Tab;
-
-// a:after {
-//   background: none repeat scroll 0 0 transparent;
-//   background: #fff;
-//   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-
-// }
